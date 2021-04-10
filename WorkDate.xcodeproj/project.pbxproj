@@ -9,12 +9,19 @@
 /* Begin PBXBuildFile section */
 		62A9FCEB2621F6D3006EC5C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A9FCEA2621F6D3006EC5C4 /* AppDelegate.swift */; };
 		62A9FCED2621F6D3006EC5C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A9FCEC2621F6D3006EC5C4 /* SceneDelegate.swift */; };
-		62A9FCEF2621F6D3006EC5C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A9FCEE2621F6D3006EC5C4 /* ViewController.swift */; };
+		62A9FCEF2621F6D3006EC5C4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A9FCEE2621F6D3006EC5C4 /* MainViewController.swift */; };
 		62A9FCF22621F6D3006EC5C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62A9FCF02621F6D3006EC5C4 /* Main.storyboard */; };
 		62A9FCF42621F6D4006EC5C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62A9FCF32621F6D4006EC5C4 /* Assets.xcassets */; };
 		62A9FCF72621F6D4006EC5C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62A9FCF52621F6D4006EC5C4 /* LaunchScreen.storyboard */; };
 		62A9FD022621F6D5006EC5C4 /* WorkDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A9FD012621F6D5006EC5C4 /* WorkDateTests.swift */; };
 		62A9FD0D2621F6D5006EC5C4 /* WorkDateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A9FD0C2621F6D5006EC5C4 /* WorkDateUITests.swift */; };
+		62FFB3032622192000448BFB /* ClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FFB3022622192000448BFB /* ClientViewController.swift */; };
+		62FFB30926221E3900448BFB /* ClientEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FFB30826221E3900448BFB /* ClientEntity.swift */; };
+		62FFB31326222FF100448BFB /* JobEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FFB31226222FF100448BFB /* JobEntity.swift */; };
+		62FFB31B2622304800448BFB /* JobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FFB31A2622304800448BFB /* JobViewController.swift */; };
+		62FFB323262240B100448BFB /* ScheduleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FFB322262240B100448BFB /* ScheduleViewCell.swift */; };
+		62FFB32C2622418600448BFB /* ScheduleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FFB32B2622418600448BFB /* ScheduleEntity.swift */; };
+		62FFB3342622438000448BFB /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FFB3332622438000448BFB /* ScheduleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +45,7 @@
 		62A9FCE72621F6D3006EC5C4 /* WorkDate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkDate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62A9FCEA2621F6D3006EC5C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62A9FCEC2621F6D3006EC5C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		62A9FCEE2621F6D3006EC5C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		62A9FCEE2621F6D3006EC5C4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		62A9FCF12621F6D3006EC5C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62A9FCF32621F6D4006EC5C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62A9FCF62621F6D4006EC5C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +56,13 @@
 		62A9FD082621F6D5006EC5C4 /* WorkDateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkDateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62A9FD0C2621F6D5006EC5C4 /* WorkDateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkDateUITests.swift; sourceTree = "<group>"; };
 		62A9FD0E2621F6D5006EC5C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62FFB3022622192000448BFB /* ClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientViewController.swift; sourceTree = "<group>"; };
+		62FFB30826221E3900448BFB /* ClientEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientEntity.swift; sourceTree = "<group>"; };
+		62FFB31226222FF100448BFB /* JobEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobEntity.swift; sourceTree = "<group>"; };
+		62FFB31A2622304800448BFB /* JobViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobViewController.swift; sourceTree = "<group>"; };
+		62FFB322262240B100448BFB /* ScheduleViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewCell.swift; sourceTree = "<group>"; };
+		62FFB32B2622418600448BFB /* ScheduleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleEntity.swift; sourceTree = "<group>"; };
+		62FFB3332622438000448BFB /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +113,11 @@
 		62A9FCE92621F6D3006EC5C4 /* WorkDate */ = {
 			isa = PBXGroup;
 			children = (
+				62FFB2F626220F8000448BFB /* Features */,
+				62FFB2F526220F6E00448BFB /* Resources */,
+				62FFB2F426220F5F00448BFB /* Supporting Files */,
 				62A9FCEA2621F6D3006EC5C4 /* AppDelegate.swift */,
 				62A9FCEC2621F6D3006EC5C4 /* SceneDelegate.swift */,
-				62A9FCEE2621F6D3006EC5C4 /* ViewController.swift */,
-				62A9FCF02621F6D3006EC5C4 /* Main.storyboard */,
-				62A9FCF32621F6D4006EC5C4 /* Assets.xcassets */,
-				62A9FCF52621F6D4006EC5C4 /* LaunchScreen.storyboard */,
-				62A9FCF82621F6D4006EC5C4 /* Info.plist */,
 			);
 			path = WorkDate;
 			sourceTree = "<group>";
@@ -126,6 +138,119 @@
 				62A9FD0E2621F6D5006EC5C4 /* Info.plist */,
 			);
 			path = WorkDateUITests;
+			sourceTree = "<group>";
+		};
+		62FFB2F326220F4E00448BFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62A9FCF02621F6D3006EC5C4 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62FFB2F426220F5F00448BFB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				62A9FCF82621F6D4006EC5C4 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		62FFB2F526220F6E00448BFB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				62A9FCF52621F6D4006EC5C4 /* LaunchScreen.storyboard */,
+				62A9FCF32621F6D4006EC5C4 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		62FFB2F626220F8000448BFB /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				62FFB31F2622407D00448BFB /* Schedule */,
+				62FFB31026222FDB00448BFB /* Job */,
+				62FFB2FB26220FF700448BFB /* Main */,
+				62FFB2FA26220FE700448BFB /* Client */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		62FFB2FA26220FE700448BFB /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				62FFB30726221E2800448BFB /* Entity */,
+				62FFB3022622192000448BFB /* ClientViewController.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		62FFB2FB26220FF700448BFB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				62FFB32A2622417D00448BFB /* Entity */,
+				62FFB2F326220F4E00448BFB /* View */,
+				62A9FCEE2621F6D3006EC5C4 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		62FFB30726221E2800448BFB /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				62FFB30826221E3900448BFB /* ClientEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		62FFB31026222FDB00448BFB /* Job */ = {
+			isa = PBXGroup;
+			children = (
+				62FFB31126222FE500448BFB /* Entity */,
+				62FFB31A2622304800448BFB /* JobViewController.swift */,
+			);
+			path = Job;
+			sourceTree = "<group>";
+		};
+		62FFB31126222FE500448BFB /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				62FFB31226222FF100448BFB /* JobEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		62FFB31F2622407D00448BFB /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				62FFB3202622408700448BFB /* View */,
+				62FFB3332622438000448BFB /* ScheduleViewController.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		62FFB3202622408700448BFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62FFB3212622408B00448BFB /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62FFB3212622408B00448BFB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				62FFB322262240B100448BFB /* ScheduleViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		62FFB32A2622417D00448BFB /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				62FFB32B2622418600448BFB /* ScheduleEntity.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +383,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62A9FCEF2621F6D3006EC5C4 /* ViewController.swift in Sources */,
+				62FFB31326222FF100448BFB /* JobEntity.swift in Sources */,
+				62FFB323262240B100448BFB /* ScheduleViewCell.swift in Sources */,
+				62FFB31B2622304800448BFB /* JobViewController.swift in Sources */,
+				62A9FCEF2621F6D3006EC5C4 /* MainViewController.swift in Sources */,
 				62A9FCEB2621F6D3006EC5C4 /* AppDelegate.swift in Sources */,
+				62FFB3342622438000448BFB /* ScheduleViewController.swift in Sources */,
+				62FFB30926221E3900448BFB /* ClientEntity.swift in Sources */,
 				62A9FCED2621F6D3006EC5C4 /* SceneDelegate.swift in Sources */,
+				62FFB3032622192000448BFB /* ClientViewController.swift in Sources */,
+				62FFB32C2622418600448BFB /* ScheduleEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +570,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4F3Z7B359Q;
-				INFOPLIST_FILE = WorkDate/Info.plist;
+				INFOPLIST_FILE = "WorkDate/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +589,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4F3Z7B359Q;
-				INFOPLIST_FILE = WorkDate/Info.plist;
+				INFOPLIST_FILE = "WorkDate/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
