@@ -15,6 +15,9 @@
 		62A9FCF72621F6D4006EC5C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62A9FCF52621F6D4006EC5C4 /* LaunchScreen.storyboard */; };
 		62A9FD022621F6D5006EC5C4 /* WorkDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A9FD012621F6D5006EC5C4 /* WorkDateTests.swift */; };
 		62A9FD0D2621F6D5006EC5C4 /* WorkDateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A9FD0C2621F6D5006EC5C4 /* WorkDateUITests.swift */; };
+		62EFC068263A2725008DA2B4 /* SaveClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EFC067263A2725008DA2B4 /* SaveClientViewController.swift */; };
+		62EFC071263A3591008DA2B4 /* AutoSizingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EFC070263A3591008DA2B4 /* AutoSizingTableView.swift */; };
+		62EFC077263A3C61008DA2B4 /* WorkDate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62EFC075263A3C61008DA2B4 /* WorkDate.xcdatamodeld */; };
 		62FFB3032622192000448BFB /* ClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FFB3022622192000448BFB /* ClientViewController.swift */; };
 		62FFB30926221E3900448BFB /* ClientEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FFB30826221E3900448BFB /* ClientEntity.swift */; };
 		62FFB31326222FF100448BFB /* JobEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FFB31226222FF100448BFB /* JobEntity.swift */; };
@@ -56,6 +59,9 @@
 		62A9FD082621F6D5006EC5C4 /* WorkDateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkDateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62A9FD0C2621F6D5006EC5C4 /* WorkDateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkDateUITests.swift; sourceTree = "<group>"; };
 		62A9FD0E2621F6D5006EC5C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62EFC067263A2725008DA2B4 /* SaveClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveClientViewController.swift; sourceTree = "<group>"; };
+		62EFC070263A3591008DA2B4 /* AutoSizingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSizingTableView.swift; sourceTree = "<group>"; };
+		62EFC076263A3C61008DA2B4 /* WorkDate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorkDate.xcdatamodel; sourceTree = "<group>"; };
 		62FFB3022622192000448BFB /* ClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientViewController.swift; sourceTree = "<group>"; };
 		62FFB30826221E3900448BFB /* ClientEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientEntity.swift; sourceTree = "<group>"; };
 		62FFB31226222FF100448BFB /* JobEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobEntity.swift; sourceTree = "<group>"; };
@@ -113,11 +119,13 @@
 		62A9FCE92621F6D3006EC5C4 /* WorkDate */ = {
 			isa = PBXGroup;
 			children = (
+				62EFC06C263A354C008DA2B4 /* Components */,
 				62FFB2F626220F8000448BFB /* Features */,
 				62FFB2F526220F6E00448BFB /* Resources */,
 				62FFB2F426220F5F00448BFB /* Supporting Files */,
 				62A9FCEA2621F6D3006EC5C4 /* AppDelegate.swift */,
 				62A9FCEC2621F6D3006EC5C4 /* SceneDelegate.swift */,
+				62A9FCF02621F6D3006EC5C4 /* Main.storyboard */,
 			);
 			path = WorkDate;
 			sourceTree = "<group>";
@@ -140,10 +148,17 @@
 			path = WorkDateUITests;
 			sourceTree = "<group>";
 		};
+		62EFC06C263A354C008DA2B4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				62EFC070263A3591008DA2B4 /* AutoSizingTableView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		62FFB2F326220F4E00448BFB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				62A9FCF02621F6D3006EC5C4 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -152,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				62A9FCF82621F6D4006EC5C4 /* Info.plist */,
+				62EFC075263A3C61008DA2B4 /* WorkDate.xcdatamodeld */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -181,6 +197,7 @@
 			children = (
 				62FFB30726221E2800448BFB /* Entity */,
 				62FFB3022622192000448BFB /* ClientViewController.swift */,
+				62EFC067263A2725008DA2B4 /* SaveClientViewController.swift */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -385,11 +402,14 @@
 			files = (
 				62FFB31326222FF100448BFB /* JobEntity.swift in Sources */,
 				62FFB323262240B100448BFB /* ScheduleViewCell.swift in Sources */,
+				62EFC068263A2725008DA2B4 /* SaveClientViewController.swift in Sources */,
 				62FFB31B2622304800448BFB /* JobViewController.swift in Sources */,
 				62A9FCEF2621F6D3006EC5C4 /* MainViewController.swift in Sources */,
 				62A9FCEB2621F6D3006EC5C4 /* AppDelegate.swift in Sources */,
 				62FFB3342622438000448BFB /* ScheduleViewController.swift in Sources */,
+				62EFC077263A3C61008DA2B4 /* WorkDate.xcdatamodeld in Sources */,
 				62FFB30926221E3900448BFB /* ClientEntity.swift in Sources */,
+				62EFC071263A3591008DA2B4 /* AutoSizingTableView.swift in Sources */,
 				62A9FCED2621F6D3006EC5C4 /* SceneDelegate.swift in Sources */,
 				62FFB3032622192000448BFB /* ClientViewController.swift in Sources */,
 				62FFB32C2622418600448BFB /* ScheduleEntity.swift in Sources */,
@@ -725,6 +745,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		62EFC075263A3C61008DA2B4 /* WorkDate.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				62EFC076263A3C61008DA2B4 /* WorkDate.xcdatamodel */,
+			);
+			currentVersion = 62EFC076263A3C61008DA2B4 /* WorkDate.xcdatamodel */;
+			path = WorkDate.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 62A9FCDF2621F6D3006EC5C4 /* Project object */;
 }

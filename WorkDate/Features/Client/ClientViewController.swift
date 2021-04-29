@@ -5,6 +5,7 @@
 //  Created by Wladmir  on 10/04/21.
 //
 
+import CoreData
 import UIKit
 
 class ClientViewController: UIViewController {
@@ -30,6 +31,7 @@ class ClientViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     var clientList : [ClientEntity] = []
+    var clients: [NSManagedObject] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +44,28 @@ class ClientViewController: UIViewController {
                 clientList.append(contentsOf: clients)
                 tableView.reloadData()
             }
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        //1
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        //2
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Client")
+        
+        //3
+        do {
+            clients = try managedContext.fetch(fetchRequest)
+            tableView.reloadData()
+        } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
         }
     }
     
@@ -114,15 +138,16 @@ class ClientViewController: UIViewController {
 
 extension ClientViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return clientList.count
+        return clients.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellIdentifier) else {
             return UITableViewCell()
         }
-        let client = clientList[indexPath.row]
-        cell.textLabel?.text = client.name
+        let client = clients[indexPath.row]
+        cell.textLabel?.text = client.value(forKeyPath: "name") as? String
+        
         return cell
     }
 }
